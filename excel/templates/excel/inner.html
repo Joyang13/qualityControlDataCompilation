@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h2 style=
+    "font-size:200%;
+    color:rgb(84, 141, 228);"
+    >上傳場內檔案</h2>
+    <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+    {% block content %}
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ inner_form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+    <br>
+    <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+    <p>場內檔案:</p>
+    <ul>
+      {% for obj in files %}
+        <li>
+          <a href="{{ obj.inner_excel.url }}">{{ obj.inner_excel.name }}</a>
+          <small>(Uploaded date: {{ obj.upload_date }})</small>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <p><a href="{% url 'home' %}">Return to home</a></p>
+
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  .button {
+      background-color: #FFFFFF;
+      color: #000000;
+      padding: 10px;
+      border-radius: 30px;
+      -moz-border-radius: 60px;
+      -webkit-border-radius: 40px;
+      margin:10px;
+      text-align: center;
+      font-size: 110%
+  }
+  .block {
+    width: 150px;
+    height: 65px;
+  }
+  </style>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vivotek-QA場內外統整檔</title>
+  </head>
+  <body>
+    {% block content %}
+    <h2 style="text-align:center;
+                font-size:200%;
+                color:rgb(84, 141, 228);
+      
+    ">VIVOTEK-QC場內外檔案統整</h2>
+    <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+    <p>上傳檔案:</p>
+    <ul style="list-style-type:square">
+        <li>
+          <a href="{% url 'inner' %}">Upload Inner</a>
+        </li>
+        <li>
+            <a href="{% url 'outter' %}">Upload Outter</a>
+          </li>
+    </ul>
+    <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+    <p>場內檔案:</p>
+    <ul>
+      {% for obj in inner_files %}
+        <li>
+          <a href="{{ obj.inner_excel.url }}">{{ obj.inner_excel.name }}</a>
+          <small>(Uploaded date: {{ obj.upload_date }})</small>
+        </li>
+      {% endfor %}
+    </ul>
+    <p>場外檔案:</p>
+    <ul>
+      {% for obj in outter_files %}
+        <li>
+          <a href="{{ obj.outter_excel.url }}">{{ obj.outter_excel.name }}</a>
+          <small>(Uploaded date: {{ obj.upload_date }})</small>
+        </li>
+      {% endfor %}
+    </ul>
+    <hr style="height:3px;border:none;color:#333;background-color:#333;" />
+
+    <ul>
+      {% for obj in final_files %}
+        <a href = "{{ obj.final_excel.url }}"> {{ obj.final_excel.name }} </a>
+      {% endfor %}
+      {% endblock %}
+    </ul>
+  </body>
+</html>
