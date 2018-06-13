@@ -35,12 +35,14 @@ def combine():
 
     #write into excel at somewhere else
     cur_dir = os.getcwd()
-    print(cur_dir)
     os.chdir(r'..')
-    print(os.getcwd())
-    os.makedirs('temp', exist_ok = True)
-    os.chdir(r'temp')
+    os.makedirs('final_files', exist_ok = True)
+    os.chdir(r'final_files')
     j.to_excel('final.xlsx', 'Sheet1')
+    print(type(j))
+
+    #we gonna return the data frame
+    # return(j)
 
 def process_inner(df_l):
     current_path = os.getcwd()

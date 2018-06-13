@@ -10,7 +10,3 @@ class Inner_Excel(models.Model):
 class Outter_Excel(models.Model):
     outter_excel = models.FileField(upload_to='outter_files/', null = True)
     upload_date = models.DateTimeField(auto_now_add=True)
-
-class Final_Excel(models.Model):
-    name = 'my final excel'
-    final_excel = models.FileField(upload_to='final_files/', null = True)

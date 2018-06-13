@@ -2,15 +2,16 @@
 <html>
   <style>
   .button {
-      background-color: #FFFFFF;
-      color: #000000;
-      padding: 10px;
-      border-radius: 30px;
-      -moz-border-radius: 60px;
-      -webkit-border-radius: 40px;
-      margin:10px;
-      text-align: center;
-      font-size: 110%
+    display: block;
+    width: 150px;
+    height: 50px;
+    background: rgb(34, 112, 228);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    font-size:210%
   }
   .block {
     width: 150px;
@@ -60,11 +61,8 @@
     </ul>
     <hr style="height:3px;border:none;color:#333;background-color:#333;" />
 
-    <ul>
-      {% for obj in final_files %}
-        <a href = "{{ obj.final_excel.url }}"> {{ obj.final_excel.name }} </a>
-      {% endfor %}
-      {% endblock %}
-    </ul>
+    <a  href="final/" class="button"> ！統整！ </a>
+
+    {% endblock %}
   </body>
 </html>

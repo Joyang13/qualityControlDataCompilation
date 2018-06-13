@@ -8,6 +8,7 @@ urlpatterns = [
     path('home/', views.home, name = 'home'),
     path('inner/', views.upload, name='inner'),
     path('outter/', views.outter, name = 'outter'),
+    path('home/final/', views.final, name = 'final'),   
     path('media/inner_form/$', views.upload, name = 'inner_upload'),
     path('media/outter_form/$', views.outter, name = 'outter_upload'),
 ]
