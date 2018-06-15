@@ -15,11 +15,14 @@ from numpy import NaN
 def home(request):
     inner_files = Inner_Excel.objects.all()
     outter_files = Outter_Excel.objects.all()
-    print(type(Outter_Excel.objects.all()))
-
+    print(inner_files)
+    # print(inner_files.exists())
+    # print(outter_files)
+    # print(outter_files.exist())
     #this combine thing saves the final excel file in /QA/media/temp
-    combine()
-    #now we gotta load the temp/final onto the final/final
+    if inner_files.exists() == True | outter_files.exists() == True:
+        print('goin to combine')
+        combine()
 
     return render(request, 'excel/home.html', { 'inner_files': inner_files, 'outter_files': outter_files })
 

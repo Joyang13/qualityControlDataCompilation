@@ -1,0 +1,167 @@
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun 14 17:08:23 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 13 June 2018 08:02:28
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Fri Apr 13 19:32:32 PDT 2018; root:xnu-4570.51.2~1/RELEASE_X86_64
+nodename: Josephs-MacBook-Pro-2.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/joseph/Desktop/my_site/QA
+writing pidfile to /tmp/mysite.pid
+detected binary path: /Users/joseph/Desktop/my_site/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/joseph/Desktop/my_site/QA/QA
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/mysite.sock fd 3
+Python version: 3.6.4 (v3.6.4:d48ecebad5, Dec 18 2017, 21:07:28)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/joseph/Desktop/my_site/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7ffe5102a200
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'mysite'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13019)
+spawned uWSGI worker 1 (pid: 13029, cores: 1)
+spawned uWSGI worker 2 (pid: 13030, cores: 1)
+spawned uWSGI worker 3 (pid: 13031, cores: 1)
+spawned uWSGI worker 4 (pid: 13032, cores: 1)
+spawned uWSGI worker 5 (pid: 13033, cores: 1)
+spawned uWSGI worker 6 (pid: 13034, cores: 1)
+spawned uWSGI worker 7 (pid: 13035, cores: 1)
+spawned uWSGI worker 8 (pid: 13036, cores: 1)
+spawned uWSGI worker 9 (pid: 13037, cores: 1)
+spawned uWSGI worker 10 (pid: 13038, cores: 1)
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun 14 17:22:15 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 13 June 2018 08:02:28
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Fri Apr 13 19:32:32 PDT 2018; root:xnu-4570.51.2~1/RELEASE_X86_64
+nodename: Josephs-MacBook-Pro-2.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/joseph/Desktop/my_site/QA
+writing pidfile to /tmp/mysite.pid
+detected binary path: /Users/joseph/Desktop/my_site/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/joseph/Desktop/my_site/QA/QA
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/mysite.sock fd 3
+Python version: 3.6.4 (v3.6.4:d48ecebad5, Dec 18 2017, 21:07:28)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/joseph/Desktop/my_site/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7fc7b682d400
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'mysite'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14259)
+spawned uWSGI worker 1 (pid: 14269, cores: 1)
+spawned uWSGI worker 2 (pid: 14270, cores: 1)
+spawned uWSGI worker 3 (pid: 14271, cores: 1)
+spawned uWSGI worker 4 (pid: 14272, cores: 1)
+spawned uWSGI worker 5 (pid: 14274, cores: 1)
+spawned uWSGI worker 6 (pid: 14275, cores: 1)
+spawned uWSGI worker 7 (pid: 14276, cores: 1)
+spawned uWSGI worker 8 (pid: 14277, cores: 1)
+spawned uWSGI worker 9 (pid: 14278, cores: 1)
+spawned uWSGI worker 10 (pid: 14279, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 10 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /tmp/mysite.sock removed.
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Jun 14 17:26:55 2018] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1) on 13 June 2018 08:02:28
+os: Darwin-17.5.0 Darwin Kernel Version 17.5.0: Fri Apr 13 19:32:32 PDT 2018; root:xnu-4570.51.2~1/RELEASE_X86_64
+nodename: Josephs-MacBook-Pro-2.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /Users/joseph/Desktop/my_site/QA
+writing pidfile to /tmp/mysite.pid
+detected binary path: /Users/joseph/Desktop/my_site/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/joseph/Desktop/my_site/QA/QA
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/mysite.sock fd 3
+Python version: 3.6.4 (v3.6.4:d48ecebad5, Dec 18 2017, 21:07:28)  [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)]
+Set PythonHome to /Users/joseph/Desktop/my_site/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7f9f2d810000
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 801768 bytes (782 KB) for 10 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'mysite'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14645)
+spawned uWSGI worker 1 (pid: 14655, cores: 1)
+spawned uWSGI worker 2 (pid: 14656, cores: 1)
+spawned uWSGI worker 3 (pid: 14657, cores: 1)
+spawned uWSGI worker 4 (pid: 14658, cores: 1)
+spawned uWSGI worker 5 (pid: 14659, cores: 1)
+spawned uWSGI worker 6 (pid: 14660, cores: 1)
+spawned uWSGI worker 7 (pid: 14661, cores: 1)
+spawned uWSGI worker 8 (pid: 14662, cores: 1)
+spawned uWSGI worker 9 (pid: 14663, cores: 1)
+spawned uWSGI worker 10 (pid: 14664, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 10 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /tmp/mysite.sock removed.
+...brutally killing workers...
+worker 10 buried after 1 seconds
+worker 9 buried after 1 seconds
+worker 8 buried after 1 seconds
+worker 7 buried after 1 seconds
+worker 6 buried after 1 seconds
+worker 5 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /Users/joseph/Desktop/my_site/QA
+closing all non-uwsgi socket fds > 2 (max_fd = 256)...
+found fd 3 mapped to socket 0 (/tmp/mysite.sock)
+running /Users/joseph/Desktop/my_site/venv/bin/uwsgi

@@ -39,7 +39,6 @@ def combine():
     os.makedirs('final_files', exist_ok = True)
     os.chdir(r'final_files')
     j.to_excel('final.xlsx', 'Sheet1')
-    print(type(j))
 
     #we gonna return the data frame
     # return(j)
